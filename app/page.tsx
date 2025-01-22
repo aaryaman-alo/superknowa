@@ -4,6 +4,7 @@ import { ImageCarousel } from "@/components/ImageCarousel";
 import { LogoCarousel } from "@/components/LogoCarousel";
 import { ShiningCard } from "@/components/shiningCard";
 import { LinkedInButton } from "@/components/LinkedInButton";
+import { ContactForm } from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -20,10 +21,7 @@ export default function Home() {
               height={32} 
               className="h-8 w-auto"
             />
-            <a 
-              href="mailto:hello@superknowa.biz?subject=Project%20Inquiry"
-              className="inline-block"
-            >
+            <a href="#contact-form" className="inline-block">
               <ButtonGlitchBrightness />
             </a>
           </header>
@@ -111,16 +109,11 @@ export default function Home() {
           </section>
 
           {/* Contact Section */}
-          <section className="py-20 -mx-8 px-8">
-            <h2 className="font-rubik text-[32px] leading-[40px] tracking-[-0.02em] text-white font-normal">
-              Contact us at{' '}
-              <a 
-                href="mailto:hello@superknowa.biz" 
-                className="text-violet-400 hover:text-violet-300 transition-colors underline underline-offset-4"
-              >
-                hello@superknowa.biz
-              </a>
+          <section id="contact-form" className="py-20 -mx-8 px-8">
+            <h2 className="font-rubik text-[32px] leading-[40px] tracking-[-0.02em] text-white font-normal mb-8">
+              Get in Touch
             </h2>
+            <ContactForm />
           </section>
         </div>
 
