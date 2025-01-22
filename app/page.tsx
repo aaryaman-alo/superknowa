@@ -29,7 +29,7 @@ export default function Home() {
           {/* Hero Section */}
           <section className="py-10 border-b border-white/20 -mx-8 px-8">
             <h1 className="font-rubik text-[40px] leading-[48px] tracking-[-0.02em] text-white font-normal max-w-2xl">
-              Superknowa <span className="text-violet-400">designs</span>, <span className="text-violet-400">architects</span> and <span className="text-violet-400">develops</span> systems for clients that are secure, scalable, resilient and easy to maintain.
+              Superknowa <span className="text-violet-400">designs</span>, <span className="text-violet-400">architects</span> and <span className="text-violet-400">develops</span> systems for companies that are secure, scalable, resilient and easy to maintain.
             </h1>
           </section>
 
