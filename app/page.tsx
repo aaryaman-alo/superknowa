@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ButtonGlitchBrightness } from "@/components/animatedButton";
-import { ImageCarousel } from "@/components/ImageCarousel";
 import { LogoCarousel } from "@/components/LogoCarousel";
 import { ShiningCard } from "@/components/shiningCard";
 import { LinkedInButton } from "@/components/LinkedInButton";
