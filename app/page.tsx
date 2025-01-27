@@ -8,12 +8,12 @@ import { ContactForm } from "@/components/ContactForm";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[linear-gradient(to_bottom,#1e1b4b,#020617)] before:fixed before:left-0 before:top-0 before:h-full before:w-full before:bg-[url('/noise.svg')] before:opacity-20 before:content-[''] before:pointer-events-none">
-      <div className="relative grid grid-cols-1 md:grid-cols-2 md:h-screen">
+    <div className="min-h-screen bg-[linear-gradient(to_bottom,#1e1b4b,#020617)] before:fixed before:left-0 before:top-0 before:h-full before:w-full before:bg-[url('/noise.svg')] before:opacity-20 before:content-[''] before:pointer-events-none flex items-center justify-center">
+      <div className="w-full max-w-4xl px-4 sm:px-8">
         {/* Left Column: Scrollable Content */}
-        <div className="px-8 md:overflow-y-auto relative">
+        <div className="relative">
           {/* Header */}
-          <header className="flex justify-between items-center sticky top-0 backdrop-blur-md bg-black/20 py-4 -mx-8 px-8 z-10">
+          <header className="flex justify-between items-center sticky top-4 mx-auto max-w-4xl backdrop-blur-md bg-black/20 py-4 px-8 z-10 border border-white/10 rounded-lg shadow-md">
             <Image 
               src="/logo-white.svg" 
               alt="Superknowa Logo" 
@@ -27,14 +27,14 @@ export default function Home() {
           </header>
 
           {/* Hero Section */}
-          <section className="py-10 border-b border-white/20 -mx-8 px-8">
+          <section className="py-10 border-b border-white/20 px-4 sm:px-8">
             <h1 className="font-rubik text-[40px] leading-[48px] tracking-[-0.02em] text-white font-normal max-w-2xl">
               Superknowa <span className="text-violet-400">designs</span>, <span className="text-violet-400">architects</span> and <span className="text-violet-400">develops</span> systems for clients that are secure, scalable, resilient and easy to maintain.
             </h1>
           </section>
 
           {/* Clients Section */}
-          <section className="py-10 border-b border-white/20 -mx-8 px-8">
+          <section className="py-10 border-b border-white/20 px-4 sm:px-8">
             <p className="font-rubik text-[24px] leading-[32px] tracking-[-0.02em] text-white font-normal md:max-w-[460px] mb-8">
               We&apos;ve executed projects for clients ranging from <span className="text-violet-400">startups</span> to <span className="text-violet-400">multi-billion dollar companies</span>
             </p>
@@ -42,7 +42,7 @@ export default function Home() {
           </section>
 
           {/* Capabilities Section */}
-          <section className="py-10 border-b border-white/20 -mx-8 px-8">
+          <section className="py-10 border-b border-white/20 px-4 sm:px-8">
             <h2 className="font-rubik text-[24px] leading-[32px] tracking-[-0.02em] text-white font-normal md:max-w-[460px] mb-8">
               A set of capabilities built to support modern technology companies
             </h2>
@@ -68,7 +68,7 @@ export default function Home() {
           </section>
 
           {/* Team Section */}
-          <section className="py-10 border-b border-white/20 -mx-8 px-8">
+          <section className="py-10 border-b border-white/20 px-4 sm:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Mohan */}
               <div className="space-y-4">
@@ -109,16 +109,13 @@ export default function Home() {
           </section>
 
           {/* Contact Section */}
-          <section id="contact-form" className="py-20 -mx-8 px-8">
+          <section id="contact-form" className="py-20 px-4 sm:px-8">
             <h2 className="font-rubik text-[32px] leading-[40px] tracking-[-0.02em] text-white font-normal mb-8">
               Get in Touch
             </h2>
             <ContactForm />
           </section>
         </div>
-
-        {/* Right Column: Image Carousel */}
-        <ImageCarousel />
       </div>
     </div>
   );
